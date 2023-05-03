@@ -1,5 +1,6 @@
 package conta;
 
+
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -13,12 +14,12 @@ public class Menu {
 	public static void main(String[] args) throws Exception {
 
 		Scanner leia = new Scanner(System.in);
-    
+
 		// Variáveis de entrada de dados
 		int opcao, numero, agencia, tipo, aniversario, numeroDestino;
 		String titular;
-		float saldo, limite, valor;   
- 
+		float saldo, limite, valor;
+
 		// Instância da Classe ContaController
 		ContaController contas = new ContaController();
 
@@ -37,7 +38,7 @@ public class Menu {
 		contas.cadastrar(cp2);
 
 		contas.listarTodas();
-     
+
 		while (true) {
 
 			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
