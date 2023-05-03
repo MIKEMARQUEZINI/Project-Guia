@@ -11,10 +11,10 @@ public class ContaController implements ContaRepository {
      * */
     private ArrayList<Conta> listaContas = new ArrayList<Conta>();
 	int numero = 0;
-     
-    /**  
-     *  Procurar Conta por numero    
-     * */ 
+    
+    /**
+     *  Procurar Conta por numero
+     * */
     @Override
     public void procurarPorNumero(int numero) {
         var conta = buscarNaCollection(numero);
@@ -111,9 +111,9 @@ public class ContaController implements ContaRepository {
 		}else
 			System.out.println("\nA Conta de Origem e/ou Destino não foram encontradas!");
     }
-   
+
     /** 
-	 *    Métodos Auxiliares
+	 * Métodos Auxiliares
 	 **/
 	
 	/**
